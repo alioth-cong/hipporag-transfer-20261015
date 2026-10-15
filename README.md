@@ -1,6 +1,6 @@
 # HippoRAG archive transfer
 
-Public transfer of the three original archives. Each part is at most 512 MiB (536,870,912 bytes). Parts preserve the original bytes and are concatenated in numeric order.
+Public transfer of the three original archives. Each part is at most 64 MiB (67,108,864 bytes). Parts preserve the original bytes and are concatenated in numeric order.
 
 ## Download on a Linux server
 
@@ -15,13 +15,13 @@ The script supports resuming incomplete downloads, verifies each part, reconstru
 
 | Archive | Original bytes | Parts |
 |---|---:|---:|
-| `hipporag-checkout.tgz` | 5,351,944,547 | 10 |
-| `outputs-speedppr.tgz` | 3,984,064,553 | 8 |
-| `fixtures.tgz` | 6,549,129,671 | 13 |
+| `hipporag-checkout.tgz` | 5,351,944,547 | 80 |
+| `outputs-speedppr.tgz` | 3,984,064,553 | 60 |
+| `fixtures.tgz` | 6,549,129,671 | 98 |
 
 ## Manual reassembly
 
-Download all 31 parts and both SHA256SUMS files from [the release](https://github.com/alioth-cong/hipporag-transfer-20261015/releases/tag/archives-20261015). In the download directory:
+Download all 238 parts and both SHA256SUMS files from [the release](https://github.com/alioth-cong/hipporag-transfer-20261015/releases/tag/archives-20261015). In the download directory:
 
 ```bash
 sha256sum -c SHA256SUMS.parts
